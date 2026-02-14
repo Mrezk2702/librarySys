@@ -1,0 +1,25 @@
+{
+    "books": [
+        {
+            "author": "3a3ot",
+            "availableCopies": 5,
+            "borrowedBy": [],
+            "id": "B-001",
+            "title": "koks",
+            "totalCopies": 5,
+            "year": "1939"
+        },
+        {
+            "author": "kokseee",
+            "availableCopies": 5,
+            "borrowedBy": [],
+            "id": "B-002",
+            "title": "shoks",
+            "totalCopies": 5,
+            "year": "1234"
+        }
+    ],
+    "lastBookId": 2,
+    "lastUserId": 0,
+    "users": []
+}
