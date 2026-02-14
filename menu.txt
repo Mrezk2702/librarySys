@@ -1,0 +1,12 @@
+. _ . Library Menu;
+ 1) add_book 
+ 2) search_books_by_prefix 
+ 3) print_who_borrowed_book_by_name 
+ 4) print_library_by_id 
+ 5) print_library_by_name 
+ 6) add user 
+ 7) user_borrow_book 
+ 8) user_return_book 
+ 9) print_users 
+ 10) Exit 
+Enter your menu choice [1 - 10]: 

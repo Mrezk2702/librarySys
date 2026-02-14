@@ -36,8 +36,12 @@ void LibrarySystem::run(void)
             addBook();
 
             break;
+        case MenuOption::ADD_USER:
+            addUser();
+            break;
 
         case MenuOption::Exit:
+            saveData();
             break;
 
         default:
@@ -60,19 +64,10 @@ void LibrarySystem::loadData(void)
     json LibraryData;
     inFile >> LibraryData;
     inFile.close();
-    cout << LibraryData.dump(4) << endl;
     jsonToBooks(LibraryData["books"], books);
     jsonToUsers(LibraryData["users"], users);
     lastBookId = LibraryData["lastBookId"];
     lastUserId = LibraryData["lastUserId"];
-    for (const auto &book : books)
-    {
-        cout << "Book ID: " << book.id << ", Title: " << book.title << ", Author: " << book.author << ", Year: " << book.year << ", Total Copies: " << book.totalCopies << ", Available Copies: " << book.getAvailableCopies() << endl;
-    }
-    for (const auto &user : users)
-    {
-        cout << "User ID: " << user.id << ", Name: " << user.name << ", Email: " << user.email << endl;
-    }
 }
 
 void LibrarySystem::saveData(void) const
@@ -134,10 +129,26 @@ void LibrarySystem::addBook(void)
     saveData();
 }
 
-void LibrarySystem::addUser(const User &user)
+void LibrarySystem::addUser(void)
 {
-    users.push_back(user);
-    lastUserId++;
+    User newUser ={"", "", "", {}};
+    cin.ignore();
+    cout << "Enter user name: ";
+    getline(cin, newUser.name);
+    if (newUser.name.empty())    {
+        cout << "User name cannot be empty." << endl;
+        return;
+    }
+    cout << "Enter user email: ";
+    getline(cin, newUser.email);
+    if (newUser.email.empty())    {
+        cout << "User email cannot be empty." << endl;
+        return;
+    }
+    newUser.id = IDGenerator::generateUserID(++lastUserId);
+    users.push_back(newUser);
+    saveData();
+    cout << "User added successfully with ID: " << newUser.id << endl;
 }
 bool operator==(const User &u, const string &userId)
 {

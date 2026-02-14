@@ -15,7 +15,7 @@ class LibrarySystem
     void loadData(void);
     void saveData(void) const;
     void addBook(void);
-    void addUser(const User &user);
+    void addUser(void);
     void borrowBook(const string &userId, const string &bookId);
     void returnBook(const string &userId, const string &bookId);
     void run(void);

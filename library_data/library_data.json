@@ -20,6 +20,19 @@
         }
     ],
     "lastBookId": 2,
-    "lastUserId": 0,
-    "users": []
+    "lastUserId": 2,
+    "users": [
+        {
+            "borrowedBooks": [],
+            "email": "skrty@dosbaz.com",
+            "id": "U-001",
+            "name": "mohamed Rezk"
+        },
+        {
+            "borrowedBooks": [],
+            "email": "noby.no@example.com",
+            "id": "U-002",
+            "name": "noby"
+        }
+    ]
 }
