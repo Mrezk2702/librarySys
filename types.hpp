@@ -36,7 +36,7 @@ enum class MenuOption
 {
     INIT=0,
     ADD_BOOK = 1,
-    SEARCH_BOOK_BY_ID = 2,
+    SEARCH_BOOK_BY_PREFIX = 2,
     PRINT_WHO_BORROWED_BOOK_BY_NAME = 3,
     PRINT_LIBRARY_BY_ID = 4,
     PRINT_LIBRARY_BY_NAME = 5,

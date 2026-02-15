@@ -17,9 +17,18 @@
             "title": "shoks",
             "totalCopies": 5,
             "year": "1234"
+        },
+        {
+            "author": "asd",
+            "availableCopies": 7,
+            "borrowedBy": [],
+            "id": "B-003",
+            "title": "koaksh",
+            "totalCopies": 7,
+            "year": "1234"
         }
     ],
-    "lastBookId": 2,
+    "lastBookId": 3,
     "lastUserId": 2,
     "users": [
         {
