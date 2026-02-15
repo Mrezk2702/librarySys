@@ -157,13 +157,10 @@ sudo apt-get install nlohmann-json3-dev
 brew install nlohmann-json
 ```
 
-## License
-
-[Specify your license here]
 
 ## Author
 
-[Your Name/Organization]
+Mohamed Rezk-Bayoumi
 
 ---
 
