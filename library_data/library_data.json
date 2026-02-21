@@ -26,9 +26,18 @@
             "title": "koaksh",
             "totalCopies": 7,
             "year": "1234"
+        },
+        {
+            "author": "sokrty",
+            "availableCopies": 6,
+            "borrowedBy": [],
+            "id": "B-004",
+            "title": "mandos",
+            "totalCopies": 6,
+            "year": "1234"
         }
     ],
-    "lastBookId": 3,
+    "lastBookId": 4,
     "lastUserId": 2,
     "users": [
         {

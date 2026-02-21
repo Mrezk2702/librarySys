@@ -16,7 +16,7 @@ void LibrarySystem::run(void)
     while (choice != MenuOption::Exit)
     {
         cout << "==================== Library System Menu ====================" << endl;
-        ifstream menu("menu.txt");
+        ifstream menu("..//library_data//menu.txt");
         if (!menu.is_open())
         {
             cout << "Failed to open menu.txt" << endl;
@@ -179,6 +179,9 @@ void LibrarySystem::addUser(void)
     users.push_back(newUser);
     cout << "User added successfully with ID: " << newUser.id << endl;
 }
+
+
+
 bool operator==(const User &u, const string &userId)
 {
     return u.id == userId;

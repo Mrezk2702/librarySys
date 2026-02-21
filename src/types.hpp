@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 using namespace std;
+
 struct Book
 {
     string id;
@@ -32,9 +33,10 @@ struct User
     vector<string> borrowedBooks;
 };
 
+
 enum class MenuOption
 {
-    INIT=0,
+    INIT = 0,
     ADD_BOOK = 1,
     SEARCH_BOOK_BY_PREFIX = 2,
     PRINT_WHO_BORROWED_BOOK_BY_NAME = 3,

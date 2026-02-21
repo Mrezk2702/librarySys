@@ -9,7 +9,7 @@ private:
     vector<User> users;
     int lastBookId;
     int lastUserId;
-    const string dataFolder{"library_data"};
+    const string dataFolder{"..//library_data"};
     const string dataFile{"library_data.json"};
 
     void loadData(void);
